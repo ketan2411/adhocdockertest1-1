@@ -12,6 +12,11 @@ docker build -t kajal:v1
 #container started
 docker start -i kajal
 
+
+task 3:
+docker run -d --name kajalc3q3 -p 1121:80 dockerashu/ckad:v2
+http://52.204.127.145:1121/
+
 task 4:
 Question4
 FROM centos
