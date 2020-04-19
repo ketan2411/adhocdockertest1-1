@@ -1,0 +1,20 @@
+task1:
+
+#created a dockerfile for image 
+FROM alpine 
+MAINTAINER singhvikajal258@gmail.com 
+CMD date +%H:%M:%S >> time.txt
+
+#created an image 
+docker build -t kajal:v1
+
+#container started docker 
+start -i kajal
+
+task 3: 
+docker run -d --name kajalc3q3 -p 1121:80 dockerashu/ckad:v2 http://52.204.127.145:1121/
+
+task 4: 
+Question4 FROM centos RUN yum install httpd RUN mkdir /webapp1 COPY webapp /webapp1 EXPOSE 80 ENTRYPOINT httpd -DFOREGROUND
+
+docker build -t kajal:q4 .
